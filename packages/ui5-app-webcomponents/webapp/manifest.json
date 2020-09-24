@@ -62,7 +62,8 @@
         "sap.m": {},
         "sap.ui.core": {},
         "sap.ui.layout": {},
-        "ui5webc": {}
+        "ui5webc": {},
+        "mylib": {}
       }
     },
     "contentDensities": {

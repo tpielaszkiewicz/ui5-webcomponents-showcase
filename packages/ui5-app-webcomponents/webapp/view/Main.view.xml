@@ -7,7 +7,8 @@
 	xmlns:form="sap.ui.layout.form" 
 	xmlns:l="sap.ui.layout" 
 	xmlns:mvc="sap.ui.core.mvc" 
-	xmlns:webc="ui5webc">
+	xmlns:webc="ui5webc"
+	xmlns:mylib="mylib">
 	<Page title="{i18n>appTitle}">
 		<headerContent>
 			<core:Icon color="#1873B4" 
@@ -19,7 +20,7 @@
 			<l:BlockLayout background="Light">
 				<l:BlockLayoutRow>
 					<l:BlockLayoutCell>
-						<webc:Title level="H1" 
+						<mylib:Title level="H1" 
 							text="UI5 Webcomponents" 
 							align="center" />
 					</l:BlockLayoutCell>

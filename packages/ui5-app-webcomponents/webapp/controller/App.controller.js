@@ -1,3 +1,4 @@
+
 sap.ui.define([
 	"test/Sample/controller/BaseController"
 ], Controller => {
@@ -5,6 +6,9 @@ sap.ui.define([
 
 	return Controller.extend("test.Sample.controller.App", {
 		onInit() {
+
+			
+
 		}
 	});
 });

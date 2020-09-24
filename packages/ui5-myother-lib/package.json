@@ -1,0 +1,37 @@
+{
+  "name": "ui5-myother-lib",
+  "version": "0.0.1",
+  "description": "UI5 Web Components as UI5 library",
+  "private": true,
+  "scripts": {
+    "_build": "ui5 build --config ui5-dev.yaml",
+    "build": "npm-run-all prep clean --parallel rollup _build",
+    "clean": "rimraf dist/resources/mylib/*",
+    "prep": "mkdirp dist/resources/mylib",
+    "rollup": "rollup -c",
+    "watch": "npm-watch"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src",
+        "lib/bundle.js"
+      ],
+      "extensions": "js",
+      "quiet": false
+    }
+  },
+  "dependencies": {
+    "@openui5/sap.ui.core": "*"
+  },
+  "devDependencies": {
+    "@ui5/webcomponents": "*",
+    "mkdirp": "^1.0.3",
+    "npm-run-all": "^4.1.5",
+    "npm-watch": "^0.6.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^1.31.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.2.0"
+  }
+}
